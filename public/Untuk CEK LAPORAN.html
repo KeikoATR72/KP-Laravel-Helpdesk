@@ -1,0 +1,48 @@
+@extends('layouts.master')
+
+@section('title','laravel odo')
+
+@section('content')
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-4 text-gray-800">CEK LAPORAN</h1>
+
+        </div>
+
+        <!-- ISI KONTEN DISINI -->
+
+
+  <form class="" action="/" method="post" style="padding: 0px 30px">
+
+    <div class="comment description actions" style="width:30%">
+        <div class="form-group">
+          <label for="nama">E-mail</label>
+          <input type="text" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="bagian">Kode Unik</label>
+          <input type="text" class="form-control" id="kodeunik">
+        </div>
+        <button type="submit" class="btn btn-primary" name="submit">Kirim</button>
+            {{csrf_field()}}
+  </div>
+  </form>
+        <!-- /.container-fluid -->
+
+
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+@endsection
